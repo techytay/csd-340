@@ -1,0 +1,33 @@
+/* Taylor Niemann: Assignment 4.2 */
+h1 {
+    text-align: center;
+    color: rgba(155,76,42,0.8);
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  margin-top: 10%;
+}
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+h3 {
+    text-align: center;
+    color: rgba(169,105,78,0.79);
+}
+figure {
+    text-align: center;
+}
+figcaption {
+  font-style: italic;
+  font-size: .75em;
+  color: rgba(224,156,127,0.79);
+}
+.Last {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    text-align: right;
+    margin-bottom: 20px;
+}
