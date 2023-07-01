@@ -1,0 +1,58 @@
+<!-- Taylor Niemann : Assignment 9.3 -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta name="description" content="Building a Web Page Exercise" />
+    <meta name="keywords" content="example, exercise" />
+    <meta name="robots" content="nofollow" />
+    <meta name="author" content="Taylor Niemann" />
+    <link rel="stylesheet" href="Niemann_Mod9_3.css" />
+    <title>CSD 340 Development with HTML and CSS</title>
+    <script>
+        var firstVariableValue = "city";
+        var secondVariableValue = "garden";
+        var thirdVariableValue = "Dallas";
+        var fourthVariableValue = "Bellevue";
+    </script>
+</head>
+
+<body>
+    <div id=”container”>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Chapter 1: The Basics</h2>
+        <p class="intro">My name is Taylor Niemann. I am from Lincoln, NE. I currently live in
+            Lincoln, but I have plans to a larger <span id = "city">_________</span> within the next year. My 
+            goal is to move to either Omaha, NE or Dallas, TX.</p>
+        <p>One of my favorite hobbies is growing a home <span id = "garden">_________</span> with vegetables
+            and fruits. I can usually grow my garden from early May to late
+            October in Nebraska. A warmer climate such as <span id = "Dallas">_________</span>, TX would allow
+            me to have a longer growing season.</p>
+        <p>I have an older brother, an older sister, and a twin sister. My
+            brother lives in Denver, CO. My two sisters as well as my parents live
+            in Lincoln, NE. If I were to move to Texas, I would be moving away
+            from all of my family.</p>
+        <p>I am enjoying learning software development at <span id = "Bellevue">_________</span> University and looking forward to a
+            career in the field. <span class="sentence">A career change will offer a good opportunity
+            for change and starting a new chapter in a different city.</span> I am
+            thankful that I am able to make a career change and make my dreams happen.</p><br />
+        <p>
+            <button type="button"
+             onclick="document.getElementById('city').innerHTML = firstVariableValue">city</button>
+            <button type="button"
+             onclick="document.getElementById('garden').innerHTML = secondVariableValue">garden</button>           
+            <button type="button"
+             onclick="document.getElementById('Dallas').innerHTML = thirdVariableValue">Dallas</button>
+            <button type="button"
+             onclick="document.getElementById('Bellevue').innerHTML = fourthVariableValue">Bellevue</button> <br />
+        </p>
+    </div>
+    <hr />
+    <address>
+        <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, NE 68005</p>            
+    </address>
+
+</body>
+
+</html>
