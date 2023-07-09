@@ -1,0 +1,58 @@
+<!-- Taylor Niemann : Assignment 10.3 -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta name="description" content="Building a Web Page Exercise" />
+    <meta name="keywords" content="example, exercise" />
+    <meta name="robots" content="nofollow" />
+    <meta name="author" content="Taylor Niemann" />
+    <link rel="stylesheet" href="Niemann_Mod10_3.css" />
+    <title>CSD 340 Development with HTML and CSS</title>
+    <script type = "text/javascript">
+        function setNewImage() {
+            document.getElementById("img1").src ="LakeOfGlassFiltered.jpg";
+        }
+        function setOldImage() {
+            document.getElementById("img1").src ="LakeOfGlass.jpg";
+        }
+        function clickFunction() {
+            document.getElementById("img2").src ="RMNPFiltered.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <br />
+    <div id="text"
+        onmouseover="this.style.color='green';"
+        onmouseout= "this.style.color='black';">
+
+        Run your mouse over the image below to change.
+    </div>
+    <br />
+    <figure>
+      <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" 
+      src="LakeOfGlass.jpg" width="300" />
+      <figcaption>Lake of Glass</figcaption>
+    </figure>
+    <br />
+    <div id="text"
+        onmouseover="this.style.color='green';"
+        onmouseout= "this.style.color='black';">
+        Click image below to change.
+    </div>
+    <br />
+    <figure>
+        <img id="img2" onclick="clickFunction()" src="RMNP.jpg" width="300" />
+        <figcaption>Rocky Mountain National Park</figcaption>
+    </figure>
+    <br />
+    <div id ="text"
+        onmouseover="this.style.color='green';"
+        onmouseout= "this.style.color='black';">
+        Right-click and select View Source for more details.
+    </div>
+</body>
+
+</html>
