@@ -1,0 +1,106 @@
+/* Taylor Niemann: Assignment 11.2 */
+
+:root {
+    --container-height: 600px;
+    --contaier-width: 400px;
+    --header-height: 150px;
+}
+.container {
+    margin-left: 10px;
+}
+h1 {
+    font-family: verdana, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #073763;
+}
+p {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;   
+    color: black;
+}
+ul {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;   
+    color: black;    
+}
+#inputField {
+    width: 600px;
+    height: 46px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+    margin: 5px;
+    padding: 0px 10px;
+}
+#btnAdd {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 25px;
+    background-color: #2EC8E8;
+    vertical-align: middle;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#btnAdd:hover {
+    opacity: 0.8;
+}
+.main {
+    margin-left: 10px;
+    font-size: 27px;
+}
+h2 {
+    font-family: verdana, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #073763;
+}
+#toDoList {
+    height: calc(var(--container-height) - var(--header-height));
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid rgb(219, 219, 219);
+    overflow: scroll;
+    border-radius: 0 0 5px 5px;
+}
+  
+#toDoList .toDo {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    border-radius: 5px;
+}
+#toDoList .toDo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#toDoList .toDo * {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+#toDoList .toDo i {
+    font-size: 27px;
+    padding: 10px;
+}
+#toDoList .toDo p {
+    flex: 1;
+    word-break: break-all;
+    font-size: 27px;
+}
+.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+#toDoList .toDo .bi-pencil-square {
+    color: rgb(31, 177, 48);
+}
+#toDoList .toDo .bi-trash {
+    color: rgb(236, 82, 82);
+    margin: 0;
+}
+  
