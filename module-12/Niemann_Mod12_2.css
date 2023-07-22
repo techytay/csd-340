@@ -1,0 +1,70 @@
+/* Taylor Niemann: Assignment 12.2 */
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    margin-top: 10%;
+}
+.Left{
+    width: 45%;
+    font-weight: 300;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside;
+    float: left;
+    margin: 20px;
+}
+button {
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 20px;
+    background-color: #FA5A37;
+    vertical-align: middle;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    opacity: 0.8;
+}
+.Right {
+    width: 45%;
+    font-weight: 300;
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+    float: right;
+    margin: 20px;
+}
+ul {
+    list-style-type: upper-roman;
+    font-size: 20px;
+}
+#list {
+    font-size: 20px;
+}
+.Last {
+    width: 100%;
+    margin-top: 10%;
+    float: right;
+    text-align: right;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #B24932;
+    font-weight: 500;
+    font-size: 27px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

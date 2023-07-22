@@ -1,0 +1,88 @@
+<!-- Taylor Niemann : Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta name="description" content="Building a Web Page Exercise" />
+    <meta name="keywords" content="example, exercise" />
+    <meta name="robots" content="nofollow" />
+    <meta name="author" content="Taylor Niemann" />
+    <link rel="stylesheet" href="Niemann_Mod12_2.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>    
+    <div id="container">
+        <div class="Left">
+            <h3>Top 10 Favorite Books</h3>
+            <button id="btnDisplay" type="button">Top to Bottom</button>
+            <button id="btnReverse" type="button">Bottom to Top</button>
+            <hr />
+                <div id="list">
+                    <!-- <ol><li>Python Crash Course</li>
+                    <li>Atomic Design</li>
+                    <li>100 Things Every Designer Needs to Know About People</li>
+                    <li>HTML and CSS</li>
+                    <li>MySQL Explained</li>
+                    <li>Sams Teach Yourself SQL</li>
+                    <li>Introduction to Java Programming and Data Structures</li>
+                    <li>All-in-One CSSLP</li>
+                    <li>Just Listen</li>
+                    <li>That Summer</li></ol> -->
+                </div>
+        </div>
+        <div class="Right">
+            <h3>5 Things I've Learned Since the Course Started</h3>
+                <ul>
+                    <li>Designers need to understand how a user interacts with a web page</li>
+                    <li>HTML is for web content and structure and CSS is for design</li>
+                    <li>HTML commands are not hard for me to remember</li>
+                    <li>Color can be set in CSS by RGB values, hex code, and color names</li>
+                    <li>Each section of text should be thought of as a box</li>
+                </ul>
+        </div>
+    </div>        
+    <div class="Last">
+        <a href="https://techytay.github.io/csd-340/"> back to Taylor Niemann's CSD 340 Landing Page</a>
+    </div>
+    <script>
+        // Create an array of books and a variable that hold the array reversed
+        const bookList = ['Python Crash Course', 'Atomic Design', '100 Things Every Designer Needs to Know About People', 'HTML and CSS', 'MySQL Explained', 'Sams Teach Yourself SQL', 'Introduction to Java Programming and Data Structures', 'All-in-One CSSLP', 'Just Listen', 'That Summer'];
+        const btnDisplay = document.getElementById("btnDisplay");
+        const btnReverse = document.getElementById("btnReverse");
+        
+        // Function to display array items in "top to bottom" order
+        function displayListItems(arg) {
+            let items = "";
+            for (let i = 0; i < arg.length; i++) {
+                items += `<li>${arg[i]}</li>`;
+            }
+            return items;
+
+        }
+        // Set list of books in ordered list
+        document.getElementById("list").innerHTML = `<ol>${displayListItems(bookList)}</ol>`;
+
+        btnDisplay.addEventListener("click", function(e) {
+            let items = "";
+            document.getElementById("list").innerHTML = ""; // Clear previous text
+            for (let i = 0; i < bookList.length; i++) {
+                items += `<li>${bookList[i]}</li>`;
+            }
+            document.getElementById("list").innerHTML = `<ol>${items}</ol>`;
+        });
+
+        btnReverse.addEventListener("click", function(e) {
+            let items = "";
+            const newArr = bookList.concat().reverse();
+            document.getElementById("list").innerHTML = ""; // Clear previous text
+            for (let i = 0; i < newArr.length; i++) {
+                items += `<li>${newArr[i]}</li>`;
+            }
+            document.getElementById("list").innerHTML = `<ol reversed>${items}</ol>`  
+        });
+    </script>
+</body>
+
+</html>
